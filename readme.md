@@ -10,14 +10,21 @@ We are using a code-first approach, with a simple services class instead of usin
         - Categories - Books (One-To-Many)
         - Books - Authors (Many-To-Many)
 - [x] - Create entity models
-- [ ] - Create a database in mysql and a user with permissions
-- [ ] - Install required packages
+- [x] - Create a database in mysql and a user with permissions
+- [x] - Install required packages
     - `MySql.EntityFrameworkCore` (MySql library for EFCore)
     - `Microsoft.EntityFrameworkCore.Design --version 9.*` (Migrations) (Major version must match our .NET 9 version)
-- [ ] - Setup model classes
-- [ ] - Setup `DbContext` derived class with `DbSet` propertjies.
-    - [ ] - Configure connection string
-    - [ ] - Configure seeds, model constraints and relationships
+- [x] - Setup model classes
+- [x] - Setup `DbContext` derived class with `DbSet` propertjies.
+    - [x] - Configure connection string
+    - [x] - Configure model constraints
+    - [x] - Configure relationships
+    - [ ] - Configure seeds
+- [ ] - Setup migrations
+    - [ ] - Update database through migrations
+- [ ] - Setup services
+    - [ ] - Setup basic CRUD operations
+- [ ] - Setup some fancy LINQ methods
 
 # ERD
 ![erd image](./ERD/Diagram.drawio.png)
