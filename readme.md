@@ -6,7 +6,7 @@ Simple EFCore + MySQL project to practice code-first approach and linq with C# a
     - Relationships:
         - Categories - Books (One-To-Many)
         - Books - Authors (Many-To-Many)
-
+- [x] - Create entity models
 - [ ] - Create a database in mysql and a user with permissions
 - [ ] - Install required packages
     - `MySql.EntityFrameworkCore` (MySql library for EFCore)
