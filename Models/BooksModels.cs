@@ -27,3 +27,9 @@ public class Author
 
     public List<Book> Books { get; set; } = null!;
 }
+
+public class BookAuthor
+{
+    public int BookId { get; set; }
+    public int AuthorId { get; set; }
+}
