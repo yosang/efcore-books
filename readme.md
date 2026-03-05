@@ -13,7 +13,7 @@ To refresh our understanding of the concept of the repository pattern, lets clar
 - Common methods implemented in a repository are `CRUD` methods.
 
 - **DbContext** - Implements Unit Of Work, which is just a centralized class for changes to be added to the database (it tracks changes, manages transactions/connections, and coordinates `SaveChanges()`).
-- **DbSet** - Acts as a repository in a way that it treats the external database entity models as if it were in-memory collections. It allows us developers to interact with the models in plain C# by reading models (and including relationships), creating records, deleting and updating.
+- **DbSet** - Acts as a repository in a way that it treats the external database entity models as if it were in-memory collections. It allows us to interact with the models in plain C# by reading models (and including relationships), creating records, deleting and updating.
     - Implements [IQueryable<T>](https://learn.microsoft.com/en-us/dotnet/api/system.linq.iqueryable-1?view=net-10.0) which is an Interface that evaluates queries and translates them to a specific data source language such as `SQL`.
     - Its important to know that `DbSet` does not load everything into memory unless we enumerate the query, that is where `IQueryable<T>` comes in.
         - `IQueryable<T>` builds an expression tree (blueprint) and ony loads data into memory when we execute `ToList`, `Single`, `FirstOrDefault` etc.
