@@ -14,8 +14,8 @@ public class BookService
     }
 
     // - Reading from the database
-    // Books table
 
+    // Books table
     public List<Book> getAllBooks()
     {
 
@@ -33,7 +33,6 @@ public class BookService
             Console.WriteLine("Something went wrong", e.Message);
             throw;
         }
-
 
     }
     // Categories table

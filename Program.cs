@@ -12,9 +12,9 @@ public class Program
 
         // Add a new BookAuthor relationship entry
         var newEntry = new BookAuthor { BookId = 1, AuthorId = 3 };
-        service.addBookAuthor(newEntry);
+        // service.addBookAuthor(newEntry);
 
-        // Get some books
+        // Get some books with its categories and all its authors
         var books = service.getAllBooks();
         foreach (var b in books)
         {
