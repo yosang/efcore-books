@@ -105,5 +105,32 @@ public class Program
 
         // Update a category
         // service.updateCategory(8, new Category { Name = "Blæh" });
+
+        // var booksPerAuthor = service.booksPerAuthor();
+        // foreach (var b in booksPerAuthor)
+        // {
+        //     Console.WriteLine($"{b}");
+        // }
+
+        // var routinedAuthors = service.routinedAuthors(1);
+        // foreach (var r in routinedAuthors)
+        // {
+        //     Console.WriteLine(r);
+        // }
+
+        // var topNewstBooks = service.topNewstBooks(2);
+        // foreach (var t in topNewstBooks)
+        // {
+        //     Console.WriteLine(t);
+        // }
+
+        // var averageAuthorsPerBook = service.averageAuthorsPerBook();
+        // Console.WriteLine(averageAuthorsPerBook);
+
+        var categoryBooksCounts = service.categoryBooksCounts();
+        foreach (var c in categoryBooksCounts)
+        {
+            Console.WriteLine(c);
+        }
     }
 }

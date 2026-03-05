@@ -45,8 +45,8 @@ To see an example of the **Repository Pattern** implemented on top of Entity Fra
     - [x] - Update database through migrations
 - [ ] - Setup services
     - [x] - Setup a minimal working method/'s
-    - [ ] - Setup basic CRUD operations
-- [ ] - Setup some fancy LINQ methods
+    - [x] - Setup basic CRUD operations
+- [x] - Setup some fancy LINQ methods
 
 # ERD
 ![erd image](./ERD/Diagram.drawio.png)

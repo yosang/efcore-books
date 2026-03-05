@@ -180,4 +180,20 @@ public class BookService
             return true;
         });
 
+    // Some fancy LINQ
+
+    // Count books per author
+    public List<object> booksPerAuthor() => Db(() => _ctx.Authors.Select(e => new { e.FirstName, e.LastName, e.Books.Count }).ToList<object>());
+
+    // Authors who have written more than N books
+    public List<object> routinedAuthors(int minWrittenBooks) => Db(() => _ctx.Authors.Where(e => e.Books.Count > minWrittenBooks).Select(e => new { e.FirstName, e.LastName, e.Books.Count }).ToList<object>());
+
+    // Top N newest books
+    public List<object> topNewstBooks(int n) => Db(() => _ctx.Books.OrderByDescending(e => e.PublicationYear).Select(e => new { e.Title, e.PublicationYear }).Take(n).ToList<object>());
+
+    // Average number of authors per book
+    public double averageAuthorsPerBook() => Db(() => _ctx.Books.Select(e => e.Authors.Count).Average());
+
+    // Category names with count of books in each
+    public List<object> categoryBooksCounts() => Db(() => _ctx.Categories.Select(e => new { e.Name, e.Books.Count }).ToList<object>());
 }
