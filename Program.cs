@@ -1,24 +1,21 @@
 ﻿using books.context;
 using books.models;
+using books.services;
 using Microsoft.EntityFrameworkCore;
 
 public class Program
 {
     public static void Main()
     {
-        using var ctx = new BookContext();
+        // Initializing BookService through Dependency Injection
+        var service = new BookService(new BookContext());
 
-        var newEntry = new BookAuthor { BookId = 1, AuthorId = 2 };
-        var exists = ctx.BookAuthor.Any(b => b.BookId == newEntry.BookId && b.AuthorId == newEntry.AuthorId);
+        // Add a new BookAuthor relationship entry
+        var newEntry = new BookAuthor { BookId = 1, AuthorId = 3 };
+        service.addBookAuthor(newEntry);
 
-        if (!exists)
-        {
-            ctx.BookAuthor.Add(newEntry);
-            ctx.SaveChanges();
-        }
-
-
-        var books = ctx.Books.Include(e => e.Authors).Include(e => e.Category);
+        // Get some books
+        var books = service.getAllBooks();
         foreach (var b in books)
         {
             Console.WriteLine($"Book: {b.ID} - {b.Title}");

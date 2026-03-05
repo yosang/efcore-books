@@ -41,8 +41,8 @@ To see an example of the **Repository Pattern** implemented on top of Entity Fra
     - [x] - Configure model constraints
     - [x] - Configure relationships
     - [ ] - Configure seeds
-- [ ] - Setup migrations
-    - [ ] - Update database through migrations
+- [x] - Setup migrations
+    - [x] - Update database through migrations
 - [ ] - Setup services
     - [ ] - Setup basic CRUD operations
 - [ ] - Setup some fancy LINQ methods

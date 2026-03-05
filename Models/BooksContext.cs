@@ -32,6 +32,7 @@ public class BookContext : DbContext
             .WithMany(e => e.Books)
             .UsingEntity<BookAuthor>(); // Here we are setting name for the M-M joint table
 
+        // Constraint: Making ssure the Category entity is created with a Name property
         modelBuilder.Entity<Category>()
             .Property(e => e.Name)
             .IsRequired();
