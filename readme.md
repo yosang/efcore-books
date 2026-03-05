@@ -51,5 +51,11 @@ To see an example of the **Repository Pattern** implemented on top of Entity Fra
 # ERD
 ![erd image](./ERD/Diagram.drawio.png)
 
+# Usage
+...
+
+# Technologies
+...
+
 # About
 [Yosmel Chiang](https://github.com/yosang)
