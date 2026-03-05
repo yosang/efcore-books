@@ -19,7 +19,7 @@ To refresh our understanding of the concept of the repository pattern, lets clar
         - `IQueryable<T>` builds an expression tree (blueprint) and ony loads data into memory when we execute `ToList`, `Single`, `FirstOrDefault` etc.
             - At which point the query becomes an `IEnumerable<T>`.
 
-- **Services** - Including the Unit Of Work (`DbContext`) in a service allows us to focus on LINQ composition.
+- **Services** - Injecting the Unit Of Work (`DbContext`) to a service allows us to focus on LINQ composition.
     - ![alt text](image.png)
 
 To see an example of the **Repository Pattern** implemented on top of Entity Framework Core have a look at my other repo [here](https://github.com/yosang/csharp-efcore-code-first).
@@ -40,7 +40,7 @@ To see an example of the **Repository Pattern** implemented on top of Entity Fra
     - [x] - Configure connection string
     - [x] - Configure model constraints
     - [x] - Configure relationships
-    - [ ] - Configure seeds
+    - [x] - Configure seeds
 - [x] - Setup migrations
     - [x] - Update database through migrations
 - [ ] - Setup services
