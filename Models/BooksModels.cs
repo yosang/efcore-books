@@ -4,7 +4,7 @@ public class Book
 {
     public int ID { get; set; }
     public string Title { get; set; } = string.Empty;
-
+    public int PublicationYear { get; set; }
     public int CategoryId { get; set; } // CategoryFK so we can add it by its int id
 
     public Category Category { get; set; } = null!; // one-to-one navigation prop (single)

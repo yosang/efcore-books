@@ -37,14 +37,14 @@ public class Seeds
 
         Books = new List<Book>()
         {
-            new Book { ID = 1, Title = "The Left Hand of Darkness", CategoryId = 1 },
-            new Book { ID = 2, Title = "Neverwhere", CategoryId = 2 },
-            new Book { ID = 3, Title = "The Way of Kings", CategoryId = 2 },
-            new Book { ID = 4, Title = "The Martian", CategoryId = 1 },
-            new Book { ID = 5, Title = "Exhalation", CategoryId = 1 },
-            new Book { ID = 6, Title = "The Likeness", CategoryId = 3 },
-            new Book { ID = 7, Title = "The Haunting of Hill House", CategoryId = 8 },
-            new Book { ID = 8, Title = "Hamnet", CategoryId = 5 }
+            new Book { ID = 1, Title = "The Left Hand of Darkness", PublicationYear = 1969,CategoryId = 1 },
+            new Book { ID = 2, Title = "Neverwhere", PublicationYear = 1996,CategoryId = 2 },
+            new Book { ID = 3, Title = "The Way of Kings", PublicationYear = 2010,CategoryId = 2 },
+            new Book { ID = 4, Title = "The Martian", PublicationYear = 2011,CategoryId = 1 },
+            new Book { ID = 5, Title = "Exhalation", PublicationYear = 2019,CategoryId = 1 },
+            new Book { ID = 6, Title = "The Likeness", PublicationYear = 2008,CategoryId = 3 },
+            new Book { ID = 7, Title = "The Haunting of Hill House", PublicationYear = 1959,CategoryId = 8 },
+            new Book { ID = 8, Title = "Hamnet", PublicationYear = 2020,CategoryId = 5 }
         };
 
         BooksAuthors = new List<BookAuthor>()

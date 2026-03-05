@@ -18,7 +18,6 @@ public class BookService
     // Books table
     public List<Book> getAllBooks()
     {
-
         try
         {
             return _ctx.Books.Include(e => e.Authors).Include(e => e.Category).ToList();
@@ -33,8 +32,20 @@ public class BookService
             Console.WriteLine("Something went wrong", e.Message);
             throw;
         }
-
     }
+
+    public void getBookById(int id) { }
+
+    public void getBooksByCategory() { }
+
+    public void getBooksByAuthor() { }
+
+    public void getOldestBook() { }
+
+    public void getBookInYearRange() { }
+
+    public void getAveragePublicationYear() { }
+
     // Categories table
 
     // ---- Inserting to the database
