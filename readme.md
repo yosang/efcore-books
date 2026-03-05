@@ -4,7 +4,7 @@ Simple EFCore + MySQL project to practice code-first approach and linq with C# a
 # Approach
 We are using a code-first approach, with a simple services class instead of using the repository pattern.
 
-There is a reason for why Im choosing not to implement my own repository pattern, and that is that Entity Framework Core has its own implementation:
+There is a reason for why Im choosing not to implement my own repository pattern, and that is that Entity Framework Core has its own implementation through:
 - **Unit of Work** - [DbContext](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext?view=efcore-10.0).
 - **Repository** [DbSet](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1?view=efcore-10.0).
 
